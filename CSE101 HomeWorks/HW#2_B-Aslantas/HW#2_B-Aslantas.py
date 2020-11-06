@@ -1,5 +1,5 @@
 n = 17
-blank = int(((3*n-1)-1)/2)
+blank = int((2*n + n-1)/2)
 def s_num(i):
     star_num = 9
     c_line= str()
@@ -12,5 +12,5 @@ def s_num(i):
 
 for i in range(1, n+1, 2):
     print(" "*blank + str(s_num(i)))
-    blank -= 3
-print("\n")
+    blank -= (1 + 2)
+    print("\n", end='')
