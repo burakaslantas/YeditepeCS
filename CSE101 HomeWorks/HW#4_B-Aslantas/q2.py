@@ -14,5 +14,5 @@ for i in range(len(A)):
     if current_num_counter > 1:
         if A[i] not in duplicate_numbers:
             duplicate_numbers.append(A[i])
-print(A)
-print(len(duplicate_numbers))
+print("A=",A)
+print("There are",len(duplicate_numbers), "duplicate numbers")
