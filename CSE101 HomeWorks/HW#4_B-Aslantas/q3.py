@@ -1,9 +1,7 @@
 def one_dimentional_list(n):
-    temp_list = []
-    for i in range(0, len(n), 2):
-        a = int(n[i])
-        temp_list.append(a)
-    return temp_list
+    for i in range(len(n)):
+        n[i] = int(n[i])
+    return n
 
 def two_dimentional_list(row, colomn, list):
     temp_row = []
@@ -40,12 +38,14 @@ n = int(input())
 m = int(input())
 p = int(input())
 
-A = input("Entries of matrix A :")
+#A = input("Entries of matrix A :")
+A = (input("Entries of matrix A :")).split(" ")
 print("Matrix A")
 matrix_print(n, m, one_dimentional_list(A))
 A_two_dimentional = two_dimentional_list(n, m, one_dimentional_list(A))
 
-B = input("Entries of matrix B :")
+#B = input("Entries of matrix B :")
+B = (input("Entries of matrix A :")).split(" ")
 print("Matrix B")
 matrix_print(m, p, one_dimentional_list(B))
 B_two_dimentional = two_dimentional_list(m, p, one_dimentional_list(B))
