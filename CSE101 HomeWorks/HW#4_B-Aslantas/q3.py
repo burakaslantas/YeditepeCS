@@ -45,7 +45,7 @@ matrix_print(n, m, one_dimentional_list(A))
 A_two_dimentional = two_dimentional_list(n, m, one_dimentional_list(A))
 
 #B = input("Entries of matrix B :")
-B = (input("Entries of matrix A :")).split(" ")
+B = (input("Entries of matrix B :")).split(" ")
 print("Matrix B")
 matrix_print(m, p, one_dimentional_list(B))
 B_two_dimentional = two_dimentional_list(m, p, one_dimentional_list(B))
